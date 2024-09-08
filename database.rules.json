@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "foods": {
+      ".read": "auth != null",  
+      ".write": "auth != null && root.child('users/' + auth.uid + '/role').val() === 'admin'"  
+    },
+    "users": {
+      "$userId": {
+        ".read": "auth != null && auth.uid === $userId",  
+        ".write": "auth != null && auth.uid === $userId"  
+      }
+    }
+  }
+}

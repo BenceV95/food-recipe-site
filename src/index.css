@@ -1,0 +1,72 @@
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 100dvw;
+  color-scheme: light dark;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+/*   align-items: center;
+  justify-content: center; */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #242424;
+  color: white;
+}
+
+.listFoods {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.listFoods img, .recipe img {
+  max-width: 20dvw;
+  height: auto;
+  border-radius: 20px;
+}
+
+.foodCard {
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.recipe {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 3rem;
+}
+
+.recipe-ingreds{
+  /* align-self: flex-end; */
+
+}
+
+.card{
+  
+  width: 18rem;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
